@@ -10,11 +10,14 @@ const Header = () => (
       <Link to="/" className="header-links">
         Home
       </Link>
-      <Link to="/blog" className="header-links">
-        Blog
-      </Link>
       <Link to="/about" className="header-links">
         About
+      </Link>
+      <Link to="/work" className="header-links">
+        Work
+      </Link>
+      <Link to="/blog" className="header-links">
+        Blog
       </Link>
       <Link to="/contact" className="header-links">
         Contact
