@@ -1,5 +1,82 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 70px 1fr 70px;
+  justify-items: space-around;
+  margin: 10px;
+
+  .contact-link {
+    color: #111;
+  }
+
+  .contact-link:visited {
+    color: #111;
+  }
+
+  .contact {
+    text-align: center;
+    position: relative;
+    top: -30px;
+  }
+
+  .mail {
+    position: relative;
+    width: 70px;
+    height: 60px;
+  }
+
+  .menu-wrapper {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .title {
+    font-family: "Dancing Script", Georgia, "Times New Roman", Times, serif;
+  }
+  .menu {
+    width: 50px;
+    height: 20px;
+    position: relative;
+    top: -20px;
+  }
+  .menu-text {
+    position: relative;
+    top: -50px;
+  }
+
+  .logo-div {
+    background-color: #b2def3;
+    height: 70px;
+    width: 70px;
+    border: 2px ridge #111;
+
+    background-image: -webkit-repeating-linear-gradient(
+        left,
+        hsla(0, 0%, 100%, 0) 0%,
+        hsla(0, 0%, 100%, 0) 6%,
+        hsla(0, 0%, 100%, 0.1) 7.5%
+      ),
+      -webkit-repeating-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(
+              0,
+              0%,
+              0%,
+              0
+            )
+            4%, hsla(0, 0%, 0%, 0.03) 4.5%),
+      -webkit-repeating-linear-gradient(left, hsla(0, 0%, 100%, 0) 0%, hsla(
+              0,
+              0%,
+              100%,
+              0
+            )
+            1.2%, hsla(0, 0%, 100%, 0.15) 2.2%),
+      linear-gradient(
+        180deg,
+        hsl(0, 0%, 78%) 0%,
+        hsl(0, 0%, 90%) 47%,
+        hsl(0, 0%, 78%) 53%,
+        hsl(0, 0%, 70%) 100%
+      );
+  }
 }
