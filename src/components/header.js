@@ -17,7 +17,17 @@ const Header = () => {
       </div>
       <div className="menu-wrapper">
         <h1 className="title">b.Designed</h1>
-        <div className="link-wrapper" onClick={() => toggleHiddenMenu()}>
+        <img
+          onMouseEnter={() => toggleHiddenMenu()}
+          src="menu.png"
+          alt="menu"
+          className="menu"
+        />
+        <br />
+        <div className="menu-text" onClick={() => toggleHiddenMenu()}>
+          menu
+        </div>
+        <div className="link-wrapper">
           {hidden && (
             <div className="menu-content">
               {" "}
@@ -38,14 +48,6 @@ const Header = () => {
               </Link>
             </div>
           )}
-          <img
-            onMouseEnter={() => toggleHiddenMenu()}
-            src="menu.png"
-            alt="menu"
-            className="menu"
-          />
-          <br />
-          <div className="menu-text">menu</div>
         </div>
       </div>
 

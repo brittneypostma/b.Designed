@@ -62,12 +62,14 @@
 
   .link-wrapper {
     display: grid;
+    position: relative;
 
     .menu-content {
-      -webkit-transform: scale(2);
+      -webkit-transform: scale(1.5);
       -webkit-transform-origin: 50% 0;
       position: absolute;
-      top: 100px;
+      top: -75px;
+      right: -50px;
       display: grid;
       justify-content: center;
       border: 5px ridge #111;
@@ -81,13 +83,6 @@
         .header-links:visited {
           color: rgb(255, 255, 255);
         }
-
-        .header-links:hover {
-          transform: scale(1.2);
-        }
-      }
-      .home {
-        position: relative;
       }
     }
   }
@@ -101,8 +96,8 @@
     top: 15px;
     display: grid;
     justify-items: center;
-    align-items: center;
     text-align: center;
+    grid-template-rows: 50px 50px 50px auto;
   }
 
   .title {
@@ -111,8 +106,6 @@
   .menu {
     width: 50px;
     height: 20px;
-    position: relative;
-    top: -22px;
     cursor: pointer;
   }
   .menu:hover {
