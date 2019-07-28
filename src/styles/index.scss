@@ -1,6 +1,65 @@
 /* My CSS*/
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+
+.home {
+  display: grid;
+  grid-template-columns: 45vw 45vw;
+  position: relative;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  top: -5vh;
+  max-height: 55vh;
+
+  .home-btns {
+    display: grid;
+    grid-template-columns: 40vw;
+  }
+
+  .home-btn {
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 5px ridge #111;
+    color: #0785fe;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 75%;
+    cursor: pointer;
+    margin: 5px;
+    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition: width 2s; /* Safari */
+    transition: all 1.5s ease;
+  }
+
+  .home-btn:hover {
+    width: 95%;
+    background-color: #0785fe;
+    color: white;
+  }
+
+  .left-home {
+    position: relative;
+    top: 5vh;
+    .changing-text {
+      background-color: #0785fe;
+    }
+  }
+
+  .right-home {
+    .photo {
+      margin: 0 auto;
+      border: 5px ridge #111;
+      border-radius: 50%;
+    }
+  }
+}
 /* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
+
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 
 html {
   font-family: sans-serif;

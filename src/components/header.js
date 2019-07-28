@@ -11,7 +11,9 @@ const Header = () => {
     <div className="header">
       <div className="logo-div">
         {" "}
-        <img src="b-designed192.png" alt="logo" className="logo" />
+        <Link to="/">
+          <img src="logo-only.png" alt="logo" className="logo" />
+        </Link>
       </div>
       <div onClick={() => toggleHiddenMenu()} className="menu-wrapper">
         <h1 className="title">b.Designed</h1>
@@ -36,21 +38,62 @@ const Header = () => {
               </Link>
             </div>
           )}
-          <img src="menu.png" alt="menu" className="menu" />
+          <img
+            onMouseEnter={() => toggleHiddenMenu()}
+            src="menu.png"
+            alt="menu"
+            className="menu"
+          />
           <br />
           <div className="menu-text">menu</div>
         </div>
       </div>
 
-      <a
-        href="mailto:brittneypostma@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="contact-link"
-      >
-        <img src="mail.png" alt="email me" className="mail" />
-        <div className="contact">Contact</div>
-      </a>
+      <div className="contact-wrapper">
+        <a
+          href="mailto:brittneypostma@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link"
+        >
+          <img src="mail.png" alt="email me" className="mail" />
+          <div className="contact">Contact</div>
+        </a>
+        <div className="social">
+          <a
+            href="https://www.facebook.com/BDesigned-102247847786266/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-links"
+          >
+            <img src="facebook.png" alt="facebook" />
+          </a>
+          <a
+            href="https://twitter.com/BrittneyPostma"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-links"
+          >
+            <img src="twitter.png" alt="twitter" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/brittney-postma-868928178/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-links"
+          >
+            <img src="in.png" alt="Linked In" />
+          </a>
+          <a
+            href="https://github.com/sballgirl11"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-links"
+          >
+            <img src="github.png" alt="github" />
+          </a>
+        </div>
+      </div>
     </div>
   )
 }

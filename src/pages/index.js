@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "gatsby"
+
 import Layout from "../components/layout"
 
 import "../styles/index.scss"
@@ -32,10 +34,25 @@ class IndexPage extends React.Component {
       changingTextArray[this.state.textIdx % changingTextArray.length]
     return (
       <Layout>
-        <h1>Hello,</h1>
-        <h2>
-          I am a <span className="changing-text">{changingText}</span>
-        </h2>
+        <div className="home">
+          <div className="left-home">
+            <h1 className="hello">Hello,</h1>
+            <h2>
+              I am a <span className="changing-text">{changingText}</span>
+            </h2>
+            <div className="home-btns">
+              <Link to="/contact">
+                <button className="contact-btn home-btn">Contact me now</button>
+              </Link>
+              <Link to="/portfolio">
+                <button className="portfolio-btn home-btn">See my work</button>
+              </Link>
+            </div>
+          </div>
+          <div className="right-home">
+            <img src="circle-photo.png" alt="me" className="photo" />
+          </div>
+        </div>
       </Layout>
     )
   }

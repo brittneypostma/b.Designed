@@ -1,7 +1,9 @@
 import React from "react"
 
+import "../styles/footer.scss"
+
 const Footer = () => (
-  <div>
+  <div className="footer">
     <p>
       Created by{" "}
       <a

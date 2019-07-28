@@ -1,30 +1,103 @@
 .header {
   display: grid;
-  grid-template-columns: 70px 1fr 70px;
+  grid-template-columns: 70px 1fr 120px;
   justify-items: space-around;
   margin: 10px;
 
-  .contact-link {
-    color: #111;
+  .contact-wrapper {
+    display: grid;
+    align-content: flex-start;
+    justify-content: center;
+    justify-items: center;
+    transition: all 300ms;
+
+    .contact-link {
+      color: #111;
+    }
+
+    .contact-link:visited {
+      color: #111;
+    }
+
+    .contact {
+      text-align: center;
+      position: relative;
+      top: -20px;
+      left: -5px;
+    }
+
+    .contact:hover {
+      transform: scale(1.1);
+    }
+
+    .mail {
+      width: 50px;
+      height: 40px;
+      position: relative;
+      top: 10px;
+      transition: all 300ms;
+    }
+
+    .mail:hover {
+      transform: scale(1.1);
+    }
+
+    .social {
+      display: flex;
+      flex-wrap: nowrap;
+      position: relative;
+      top: -15px;
+      left: -5px;
+      transition: all 300ms;
+
+      .social-links {
+        padding: 0 5px;
+
+        img:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
   }
 
-  .contact-link:visited {
-    color: #111;
+  .link-wrapper {
+    display: grid;
+
+    .menu-content {
+      position: absolute;
+      top: 15vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      width: 50%;
+      border-radius: 50%;
+      background-color: #111;
+
+      .header-links {
+        padding: 0 10px;
+        color: rgb(255, 255, 255);
+
+        .header-links:visited {
+          color: rgb(255, 255, 255);
+        }
+
+        .header-links:hover {
+          transform: scale(1.2);
+        }
+      }
+      .home {
+        position: relative;
+      }
+    }
   }
 
-  .contact {
-    text-align: center;
-    position: relative;
-    top: -30px;
-  }
-
-  .mail {
-    position: relative;
-    width: 70px;
-    height: 60px;
+  .header-links:hover {
+    transform: scale(1.2);
   }
 
   .menu-wrapper {
+    position: relative;
+    top: 15px;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -38,45 +111,35 @@
     width: 50px;
     height: 20px;
     position: relative;
-    top: -20px;
+    top: -22px;
+    cursor: pointer;
+  }
+  .menu:hover {
+    transform: scale(1.2);
   }
   .menu-text {
     position: relative;
-    top: -50px;
+    top: -74px;
+    cursor: pointer;
+  }
+  .menu-text:hover {
+    transform: scale(1.2);
   }
 
   .logo-div {
-    background-color: #b2def3;
-    height: 70px;
-    width: 70px;
-    border: 2px ridge #111;
-
-    background-image: -webkit-repeating-linear-gradient(
-        left,
-        hsla(0, 0%, 100%, 0) 0%,
-        hsla(0, 0%, 100%, 0) 6%,
-        hsla(0, 0%, 100%, 0.1) 7.5%
-      ),
-      -webkit-repeating-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(
-              0,
-              0%,
-              0%,
-              0
-            )
-            4%, hsla(0, 0%, 0%, 0.03) 4.5%),
-      -webkit-repeating-linear-gradient(left, hsla(0, 0%, 100%, 0) 0%, hsla(
-              0,
-              0%,
-              100%,
-              0
-            )
-            1.2%, hsla(0, 0%, 100%, 0.15) 2.2%),
-      linear-gradient(
-        180deg,
-        hsl(0, 0%, 78%) 0%,
-        hsl(0, 0%, 90%) 47%,
-        hsl(0, 0%, 78%) 53%,
-        hsl(0, 0%, 70%) 100%
-      );
+    height: 55px;
+    width: 55px;
+    border: 5px ridge rgb(80, 80, 80);
+    background-color: #0785fe;
+    position: relative;
+    top: -5px;
+    left: -5px;
+    .logo {
+      position: relative;
+      top: 2.5px;
+      left: 2.5px;
+      height: 40px;
+      width: 40px;
+    }
   }
 }
