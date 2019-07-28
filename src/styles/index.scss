@@ -4,23 +4,23 @@
 .home {
   display: grid;
   grid-template-columns: 45vw 45vw;
+  height: 55vh;
   position: relative;
   justify-content: center;
   justify-items: center;
   align-content: center;
   top: -5vh;
-  max-height: 55vh;
 
   .home-btns {
     display: grid;
-    grid-template-columns: 40vw;
+    grid-template-columns: 35vw;
   }
 
   .home-btn {
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: #0785fe;
     border: 5px ridge #111;
-    color: #0785fe;
+    color: #ffffff;
     text-align: center;
     font-size: 28px;
     padding: 20px;
@@ -35,12 +35,13 @@
 
   .home-btn:hover {
     width: 95%;
-    background-color: #0785fe;
-    color: white;
+    background-color: #ffffff;
+    color: #0785fe;
   }
 
   .left-home {
     position: relative;
+
     top: 5vh;
     .changing-text {
       background-color: #0785fe;
@@ -48,8 +49,9 @@
   }
 
   .right-home {
+    transform: scale(1.5);
+    -webkit-transform-origin: 50% 25%;
     .photo {
-      margin: 0 auto;
       border: 5px ridge #111;
       border-radius: 50%;
     }

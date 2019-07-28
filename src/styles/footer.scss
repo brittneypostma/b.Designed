@@ -1,8 +1,15 @@
 .footer {
   position: absolute;
-  top: 91vh;
+  top: 95vh;
   bottom: 0;
   width: 100%;
   text-align: center;
   overflow-y: hidden;
+
+  .name {
+    color: #0785fe;
+  }
+  .name:visited {
+    color: #0785fe;
+  }
 }

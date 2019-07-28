@@ -11,6 +11,7 @@ const Footer = () => (
         alt="twitter page"
         target="_blank"
         rel="noopener noreferrer"
+        className="name"
       >
         b.Designed
       </a>

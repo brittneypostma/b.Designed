@@ -10,7 +10,6 @@ const Layout = props => (
     <Header />
     <hr className="top-hr" />
     {props.children}
-    <hr className="bottom-hr" />
     <Footer />
   </div>
 )

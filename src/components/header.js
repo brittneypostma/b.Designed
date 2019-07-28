@@ -15,9 +15,9 @@ const Header = () => {
           <img src="logo-only.png" alt="logo" className="logo" />
         </Link>
       </div>
-      <div onClick={() => toggleHiddenMenu()} className="menu-wrapper">
+      <div className="menu-wrapper">
         <h1 className="title">b.Designed</h1>
-        <div className="link-wrapper">
+        <div className="link-wrapper" onClick={() => toggleHiddenMenu()}>
           {hidden && (
             <div className="menu-content">
               {" "}
