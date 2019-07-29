@@ -1,7 +1,9 @@
 import React from "react"
 
+import BlogLayout from "../templates/blog-layout"
+
 const Blog = () => {
-  return <div>This is the blog template.</div>
+  return <BlogLayout>This is the blog template.</BlogLayout>
 }
 
 export default Blog
