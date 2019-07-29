@@ -19,6 +19,7 @@ const Header = () => {
         <h1 className="title">b.Designed</h1>
         <img
           onMouseEnter={() => toggleHiddenMenu()}
+          onClick={() => toggleHiddenMenu()}
           src="menu.png"
           alt="menu"
           className="menu"

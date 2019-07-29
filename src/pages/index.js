@@ -35,6 +35,9 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <div className="home">
+          <div className="right-home">
+            <img src="circle-photo.png" alt="me" className="photo" />
+          </div>
           <div className="left-home">
             <h1 className="hello">Hello,</h1>
             <h2>
@@ -48,9 +51,6 @@ class IndexPage extends React.Component {
                 <button className="portfolio-btn home-btn">See my work</button>
               </Link>
             </div>
-          </div>
-          <div className="right-home">
-            <img src="circle-photo.png" alt="me" className="photo" />
           </div>
         </div>
       </Layout>

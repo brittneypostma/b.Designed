@@ -69,11 +69,12 @@
       -webkit-transform-origin: 50% 0;
       position: absolute;
       top: -75px;
-      right: -50px;
+      right: -62px;
       display: grid;
-      justify-content: center;
+      background-color: #0785fe;
       border: 5px ridge #111;
       z-index: 5;
+      width: 125px;
 
       .header-links {
         padding: 0 10px;
@@ -124,16 +125,15 @@
     height: 55px;
     width: 55px;
     border: 5px ridge rgb(80, 80, 80);
-    background-color: #0785fe;
+    background-color: #5d5d5e;
     position: relative;
     top: -5px;
     left: -5px;
     .logo {
       position: relative;
-      top: 2.5px;
-      left: 2.5px;
-      height: 40px;
-      width: 40px;
+      top: -2px;
+      height: 50px;
+      width: 50px;
     }
   }
 }

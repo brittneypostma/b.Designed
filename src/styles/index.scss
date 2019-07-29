@@ -4,9 +4,9 @@
 .home {
   display: grid;
   grid-template-columns: 45vw 45vw;
+  height: 60vh;
   justify-content: center;
   justify-items: center;
-  align-content: center;
   align-items: center;
 
   .home-btns {
@@ -41,6 +41,10 @@
     background-color: #0785fe;
   }
 
+  .right-home {
+    position: relative;
+    top: 5%;
+  }
   .photo {
     border: 5px ridge #111;
     border-radius: 50%;
@@ -51,15 +55,22 @@
   .home {
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 10px;
+    .home-btn {
+      width: 60vw;
+      transition: all 0.5s ease;
+      transition-timing-function: none;
+      -webkit-transition-timing-function: none;
+    }
 
     .left-home {
-      width: 95vw;
+      width: 75vw;
       display: grid;
       justify-content: center;
 
       .home-btns {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 65vw;
       }
     }
   }
@@ -76,7 +87,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  overflow: hidden;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
