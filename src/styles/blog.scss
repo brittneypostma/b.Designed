@@ -1,0 +1,41 @@
+.blog-page {
+  margin: 0 10vw;
+}
+
+.posts {
+  list-style-type: none;
+  margin: 0;
+}
+
+.post {
+  margin: 1rem 0;
+
+  a {
+    color: #333;
+    text-decoration: none;
+    padding: 1rem;
+    background: #f4f4f4;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  a:visited {
+    color: #333;
+  }
+  a:hover {
+    transform: scale(1.05);
+  }
+  a:active {
+    transform: scale(0.9);
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  p {
+    color: #777;
+    font-style: italic;
+  }
+}

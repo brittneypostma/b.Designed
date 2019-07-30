@@ -1,0 +1,33 @@
+.post-page {
+  margin: 0 10%;
+}
+
+.back-btn {
+  background-color: #333; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+
+  a {
+    color: white;
+  }
+  a:visited {
+    color: white;
+  }
+}
+
+.back-btn:hover {
+  background-color: #000;
+}
+.back-btn:active {
+  transform: scale(0.9);
+}

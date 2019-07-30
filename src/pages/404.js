@@ -1,9 +1,15 @@
 import React from "react"
+import { Link } from "gatsby"
 
-const PageNotFound = () => (
-  <div>
+import PostLayout from "../templates/post-layout"
+
+const NotFound = () => (
+  <PostLayout>
     <h1>Page not found</h1>
-  </div>
+    <button>
+      <Link to="/">Head Home</Link>
+    </button>
+  </PostLayout>
 )
 
-export default PageNotFound
+export default NotFound

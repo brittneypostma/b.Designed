@@ -1,9 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Logo from "../images/logo-only.png"
+import Menu from "../images/menu.png"
+import Facebook from "../images/facebook.png"
+import Twitter from "../images/twitter.png"
+import In from "../images/in.png"
+import Github from "../images/github.png"
+import Mail from "../images/mail.png"
+
 import "../styles/header.scss"
 
-const Header = () => {
+const BlogHeader = () => {
   const [hidden, setHidden] = React.useState(false)
 
   const toggleHiddenMenu = () => setHidden(!hidden)
@@ -12,7 +20,7 @@ const Header = () => {
       <div className="logo-div">
         {" "}
         <Link to="/">
-          <img src="logo-only.png" alt="logo" className="logo" />
+          <img src={Logo} alt="logo" className="logo" />
         </Link>
       </div>
       <div className="menu-wrapper">
@@ -20,7 +28,7 @@ const Header = () => {
         <img
           onMouseEnter={() => toggleHiddenMenu()}
           onClick={() => toggleHiddenMenu()}
-          src="menu.png"
+          src={Menu}
           alt="menu"
           className="menu"
         />
@@ -59,7 +67,7 @@ const Header = () => {
           rel="noopener noreferrer"
           className="contact-link"
         >
-          <img src="mail.png" alt="email me" className="mail" />
+          <img src={Mail} alt="email me" className="mail" />
           <div className="contact">Contact</div>
         </a>
         <div className="social">
@@ -69,7 +77,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="social-links"
           >
-            <img src="facebook.png" alt="facebook" />
+            <img src={Facebook} alt="facebook" />
           </a>
           <a
             href="https://twitter.com/BrittneyPostma"
@@ -77,7 +85,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="social-links"
           >
-            <img src="twitter.png" alt="twitter" />
+            <img src={Twitter} alt="twitter" />
           </a>
           <a
             href="https://www.linkedin.com/in/brittney-postma-868928178/"
@@ -85,7 +93,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="social-links"
           >
-            <img src="in.png" alt="Linked In" />
+            <img src={In} alt="Linked In" />
           </a>
           <a
             href="https://github.com/sballgirl11"
@@ -93,7 +101,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="social-links"
           >
-            <img src="github.png" alt="github" />
+            <img src={Github} alt="github" />
           </a>
         </div>
       </div>
@@ -101,4 +109,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default BlogHeader
