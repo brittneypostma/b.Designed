@@ -8,10 +8,12 @@ const AboutPage = () => {
   return (
     <Layout>
       <div className="about-page">
-        <img src="family.png" alt="family" className="family" />
+        <div className="left-about">
+          <img src="family.png" alt="family" className="family" />
+        </div>
         <div className="middle-about">
           {" "}
-          <h1>Me Talking About Myself</h1>
+          <h1>About Me</h1>
           <p>
             I am a mom of 3 wonderful children and I have still managed to find
             the time to teach myself to code. I love developing web sites
@@ -23,15 +25,70 @@ const AboutPage = () => {
           </p>
         </div>
         <div className="right-about">
-          <img src="fast.png" alt="fast" className="icons" />
-          <img src="responsive.png" alt="responsive" className="icons" />
-          <img src="intuitive.png" alt="intuitive" className="icons" />
+          <h1>Skills</h1>
+          <div className="skill-div">
+            <div>
+              <img src="webdev.png" alt="web dev" className="skills dev" />
+              <p>
+                Web <br />
+                Developer
+              </p>
+            </div>
+            <div>
+              <img
+                src="graphic.png"
+                alt="graphic designer"
+                className="skills graphic"
+              />
+              <p>
+                Graphic
+                <br /> Designer
+              </p>
+            </div>
+            <div>
+              <img
+                src="marketing.png"
+                alt="markerter"
+                className="skills marketing"
+              />
+              <p>
+                Digital
+                <br />
+                Marketer
+              </p>
+            </div>
+          </div>
         </div>
+
         <div className="bottom-about">
-          <img src="fast.png" alt="fast" className="icons" />
-          <img src="responsive.png" alt="responsive" className="icons" />
-          <img src="intuitive.png" alt="intuitive" className="icons" />
-          <img src="dynamic.png" alt="dynamic" className="icons" />
+          <div>
+            <p>FAST</p>
+            <img src="fast.png" alt="fast" className="icons fast card-front" />
+          </div>
+          <div>
+            <p>RESPONSIVE</p>
+            <img
+              src="responsive.png"
+              alt="responsive"
+              className="icons responsive card-front"
+            />
+          </div>
+          <div>
+            <p>INTUITIVE</p>
+            <img
+              src="intuitive.png"
+              alt="intuitive"
+              className="icons intuitive card-front"
+            />
+          </div>
+          <div>
+            <p>DYNAMIC</p>
+            <img
+              src="dynamic.png"
+              alt="dynamic"
+              className="icons dynamic card-front"
+            />
+          </div>
         </div>
       </div>
     </Layout>

@@ -5,9 +5,10 @@
   display: grid;
   grid-template-columns: 45vw 45vw;
   height: 60vh;
-  justify-content: center;
-  justify-items: center;
   align-items: center;
+  justify-items: center;
+  justify-content: center;
+  grid-gap: 10vw;
 
   .home-btns {
     display: grid;
@@ -44,7 +45,10 @@
   .right-home {
     position: relative;
     top: 5%;
+    left: -8vw;
+    justify-self: flex-end;
   }
+
   .photo {
     border: 5px ridge #111;
     border-radius: 50%;
@@ -62,6 +66,10 @@
       transition: all 0.5s ease;
       transition-timing-function: none;
       -webkit-transition-timing-function: none;
+    }
+    .right-home {
+      justify-self: center;
+      transform: scale(0.8);
     }
 
     .left-home {
