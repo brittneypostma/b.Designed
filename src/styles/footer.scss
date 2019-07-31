@@ -1,11 +1,11 @@
 .footer {
-  position: absolute;
-  top: 95vh;
+  position: relative;
   left: -1%;
   bottom: 0;
   width: 100%;
   text-align: center;
   overflow-y: hidden;
+  top: 20vh;
 
   .name {
     color: #0785fe;

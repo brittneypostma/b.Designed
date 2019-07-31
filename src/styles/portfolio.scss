@@ -1,0 +1,27 @@
+.diamond-button {
+  width: 350px;
+  height: 175px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+
+.portfolio-page {
+  text-align: center;
+
+  margin-left: -3%;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-content: center;
+  margin-left: -12%;
+
+  .middle-p-container {
+    grid-column: 1/-1;
+    padding: 20px;
+  }
+}

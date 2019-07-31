@@ -1,3 +1,14 @@
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.05);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
 .header {
   display: grid;
   grid-template-columns: 70px 1fr 120px;
@@ -124,16 +135,27 @@
   .logo-div {
     height: 55px;
     width: 55px;
-    border: 5px ridge rgb(80, 80, 80);
-    background-color: #5d5d5e;
     position: relative;
     top: -5px;
     left: -5px;
     .logo {
       position: relative;
+      filter: drop-shadow(2px 2px 2px rgba(34, 34, 34, 0.808));
       top: -2px;
       height: 50px;
       width: 50px;
+      transform: perspective(1px) translateZ(0);
+      transform-style: preserve-3d;
+      transition: all 1s infinite linear;
     }
+  }
+  .logo:hover {
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
   }
 }
