@@ -7,7 +7,7 @@ import "../styles/blog.scss"
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
         nodes {
           tableOfContents(pathToSlugField: "")
         }
