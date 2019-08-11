@@ -11,8 +11,7 @@
 
 .header {
   display: grid;
-  grid-template-columns: 70px 1fr 120px;
-  justify-items: space-around;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 10px;
 
   .contact-wrapper {
@@ -21,6 +20,8 @@
     justify-content: center;
     justify-items: center;
     transition: all 300ms;
+
+    justify-self: flex-end;
 
     .contact-link {
       color: #111;
@@ -59,10 +60,11 @@
       position: relative;
       top: -15px;
       left: -5px;
-      transition: all 300ms;
+      transition: all 1s linear;
 
       .social-links {
         padding: 0 5px;
+        width: 35px;
 
         img:hover {
           transform: scale(1.2);
@@ -76,8 +78,8 @@
     position: relative;
 
     .menu-content {
-      -webkit-transform: scale(1.5);
-      -webkit-transform-origin: 50% 0;
+      transform: scale(1.5);
+      transform-origin: 50% 0;
       position: absolute;
       top: -75px;
       right: -62px;

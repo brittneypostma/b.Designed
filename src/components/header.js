@@ -64,14 +64,6 @@ const Header = () => {
         </a>
         <div className="social">
           <a
-            href="https://www.facebook.com/BDesigned-102247847786266/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-links"
-          >
-            <img src="facebook.png" alt="facebook" />
-          </a>
-          <a
             href="https://twitter.com/BrittneyPostma"
             target="_blank"
             rel="noopener noreferrer"
@@ -94,6 +86,14 @@ const Header = () => {
             className="social-links"
           >
             <img src="github.png" alt="github" />
+          </a>
+          <a
+            href="https://www.facebook.com/BDesigned-102247847786266/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-links"
+          >
+            <img src="facebook.png" alt="facebook" />
           </a>
         </div>
       </div>
