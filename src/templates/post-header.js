@@ -1,15 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Logo from "../images/logo-only.png"
-import Menu from "../images/menu.png"
-import Facebook from "../images/facebook.png"
-import Twitter from "../images/twitter.png"
-import In from "../images/in.png"
-import Github from "../images/github.png"
-import Mail from "../images/mail.png"
+import Logo from "./images/logo-only.png"
+import Menu from "./images/menu.png"
+import Facebook from "./images/facebook.png"
+import Twitter from "./images/twitter.png"
+import In from "./images/in.png"
+import Github from "./images/github.svg"
+import Mail from "./images/mail.png"
 
-import "../styles/header.scss"
+import "./post-styles.scss"
 
 const BlogHeader = () => {
   const [hidden, setHidden] = React.useState(false)

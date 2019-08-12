@@ -3,6 +3,10 @@ import { Link } from "gatsby"
 
 import Social from "../components/social"
 
+import Logo from "../images/logo-only.png"
+import Menu from "../images/menu.png"
+import Mail from "../images/mail.png"
+
 import "../styles/header.scss"
 
 const Header = () => {
@@ -15,7 +19,7 @@ const Header = () => {
       <div className="logo-div">
         {" "}
         <Link to="/">
-          <img src="logo-only.png" alt="logo" className="logo" />
+          <img src={Logo} alt="logo" className="logo" />
         </Link>
       </div>
       <div className="menu-wrapper">
@@ -23,7 +27,7 @@ const Header = () => {
         <img
           onMouseEnter={() => toggleHiddenMenu()}
           onClick={() => toggleHiddenMenu()}
-          src="menu.png"
+          src={Menu}
           alt="menu"
           className="menu"
         />
@@ -58,7 +62,7 @@ const Header = () => {
       <div className="social">
         <Social />
         <Link to="/contact" className="contact-link">
-          <img className="mail" src="mail.png" alt="email me" />
+          <img className="mail" src={Mail} alt="email me" />
         </Link>
       </div>
     </div>

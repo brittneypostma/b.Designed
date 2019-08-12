@@ -2,6 +2,15 @@ import React from "react"
 
 import Layout from "../components/layout"
 
+import Family from "../images/family.png"
+import WebDev from "../images/webdev.png"
+import Graphic from "../images/graphic.png"
+import Marketing from "../images/marketing.png"
+import Fast from "../images/fast.png"
+import Responsive from "../images/responsive.png"
+import Intuitive from "../images/intuitive.png"
+import Dynamic from "../images/dynamic.png"
+
 import "../styles/about.scss"
 
 const AboutPage = () => {
@@ -9,7 +18,7 @@ const AboutPage = () => {
     <Layout>
       <div className="about-page">
         <div className="left-about">
-          <img src="family.png" alt="family" className="family" />
+          <img src={Family} alt="family" className="family" />
         </div>
         <div className="middle-about">
           {" "}
@@ -28,7 +37,7 @@ const AboutPage = () => {
           <h1>Skills</h1>
           <div className="skill-div">
             <div>
-              <img src="webdev.png" alt="web dev" className="skills dev" />
+              <img src={WebDev} alt="web dev" className="skills dev" />
               <p>
                 Web <br />
                 Developer
@@ -36,7 +45,7 @@ const AboutPage = () => {
             </div>
             <div>
               <img
-                src="graphic.png"
+                src={Graphic}
                 alt="graphic designer"
                 className="skills graphic"
               />
@@ -47,7 +56,7 @@ const AboutPage = () => {
             </div>
             <div>
               <img
-                src="marketing.png"
+                src={Marketing}
                 alt="markerter"
                 className="skills marketing"
               />
@@ -63,12 +72,12 @@ const AboutPage = () => {
         <div className="bottom-about">
           <div>
             <p>FAST</p>
-            <img src="fast.png" alt="fast" className="icons fast card-front" />
+            <img src={Fast} alt="fast" className="icons fast card-front" />
           </div>
           <div>
             <p>RESPONSIVE</p>
             <img
-              src="responsive.png"
+              src={Responsive}
               alt="responsive"
               className="icons responsive card-front"
             />
@@ -76,7 +85,7 @@ const AboutPage = () => {
           <div>
             <p>INTUITIVE</p>
             <img
-              src="intuitive.png"
+              src={Intuitive}
               alt="intuitive"
               className="icons intuitive card-front"
             />
@@ -84,7 +93,7 @@ const AboutPage = () => {
           <div>
             <p>DYNAMIC</p>
             <img
-              src="dynamic.png"
+              src={Dynamic}
               alt="dynamic"
               className="icons dynamic card-front"
             />

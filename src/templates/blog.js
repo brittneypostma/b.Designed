@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import PostLayout from "./post-layout"
+import Layout from "../components/layout"
 
 import "../styles/post.scss"
 
@@ -19,7 +19,7 @@ export const query = graphql`
 
 const Post = props => {
   return (
-    <PostLayout>
+    <Layout>
       <div className="post-page">
         <h1>{props.data.markdownRemark.frontmatter.title}</h1>
         <p>{props.data.markdownRemark.frontmatter.date}</p>
@@ -30,7 +30,7 @@ const Post = props => {
           <Link to="/blog">Go Back</Link>
         </button>
       </div>
-    </PostLayout>
+    </Layout>
   )
 }
 

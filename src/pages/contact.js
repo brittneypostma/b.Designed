@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import Social from "../components/social"
 
 import "../styles/contact.scss"
 
