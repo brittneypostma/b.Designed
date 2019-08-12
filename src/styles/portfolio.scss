@@ -11,33 +11,47 @@
 
 .portfolio-page {
   text-align: center;
-  margin-left: -3%;
 }
 
 .portfolio {
-  margin-left: -3%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  grid-gap: 20px;
+  grid-gap: 30px;
 
   .top-p {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 30px;
   }
   .middle-p-container {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 30px;
   }
 
   .bottom-p {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+
+    .top-p {
+      grid-template-columns: 1fr;
+    }
+    .middle-p-container {
+      grid-template-columns: 1fr;
+    }
+    .bottom-p {
+      grid-template-columns: 1fr;
+    }
   }
 }

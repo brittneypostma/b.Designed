@@ -1,0 +1,25 @@
+.social-img {
+  width: 35px;
+  transition: all 0.1s linear;
+  margin: 0 5px;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  .social-links {
+    padding: 0 5px;
+    width: 35px;
+  }
+}
+.gh {
+  height: 35px;
+  width: 45px;
+  position: relative;
+  left: 2px;
+  transition: all 0.5s linear;
+
+  &:hover {
+    transform: rotate(1turn) scale(1.2);
+  }
+}
