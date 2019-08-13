@@ -1,14 +1,3 @@
-@keyframes hvr-pulse {
-  25% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.05);
-  }
-  75% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
-
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -96,6 +85,21 @@
     }
   }
 
+  @keyframes hvr-pulse {
+    25% {
+      transform: scale(1.1) rotate(0.25turn);
+    }
+    50% {
+      transform: scale(1.15) rotate(0.5turn);
+    }
+    75% {
+      transform: scale(1.2) rotate(0.75turn);
+    }
+    100% {
+      transform: scale(1.25) rotate(1turn);
+    }
+  }
+
   .logo-div {
     height: 55px;
     width: 55px;
@@ -108,7 +112,8 @@
       transform-style: preserve-3d;
       transition: all 1s infinite linear;
       &:hover {
-        animation: hvr-pulse 1s linear infinite;
+        animation: hvr-pulse 1s linear;
+        transform: scale(1.25);
       }
     }
   }

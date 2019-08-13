@@ -8,6 +8,7 @@
   justify-items: center;
   justify-content: center;
   grid-gap: 10vw;
+  font-size: 28px;
 
   .home-btns {
     display: grid;
@@ -15,12 +16,10 @@
   }
 
   .home-btn {
-    border-radius: 4px;
     background-color: #0785fe;
     border: 5px ridge #111;
     color: #ffffff;
     text-align: center;
-    font-size: 28px;
     padding: 20px;
     width: 75%;
     cursor: pointer;
@@ -38,7 +37,12 @@
   }
 
   .changing-text {
+    font-size: 28px;
     background-color: #0785fe;
+    color: #ffffff;
+    padding: 10px;
+    border: 5px ridge #111;
+    font-weight: 200;
   }
 
   .right-home {

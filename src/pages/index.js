@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
+import Me from "../images/circle-photo.png"
+
 import "../styles/index.scss"
 
 const changingTextArray = [
@@ -12,6 +14,7 @@ const changingTextArray = [
   "Marketer",
   "Freelancer",
 ]
+
 class IndexPage extends React.Component {
   constructor() {
     super()
@@ -36,7 +39,7 @@ class IndexPage extends React.Component {
       <Layout>
         <div className="home">
           <div className="right-home">
-            <img src="circle-photo.png" alt="me" className="photo" />
+            <img src={Me} alt="me" className="photo" />
           </div>
           <div className="left-home">
             <h1 className="hello">Hello,</h1>
