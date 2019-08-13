@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
-import Me from "../../static/circle-photo.png"
+import Me from "../images/circle-photo.png"
 
 import "../styles/index.scss"
 

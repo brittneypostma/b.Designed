@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 
 import Social from "../components/social"
 
-import Logo from "../../static/logo-only.png"
-import Menu from "../../static/menu.png"
-import Mail from "../../static/mail.png"
+import Logo from "../images/logo-only.png"
+import Menu from "../images/menu.png"
+import Mail from "../images/mail.png"
 
 import "../styles/header.scss"
 
