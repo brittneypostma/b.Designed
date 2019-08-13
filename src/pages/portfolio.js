@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 
-import Crwn from "../images/sites/crwn.jpg"
-import SignUp from "../images/sites/sign-up-form.jpg"
-import Waukazoo from "../images/sites/wo.jpg"
-import Piano from "../images/sites/piano.jpg"
-import DrumKit from "../images/sites/drum-kit.jpg"
-import Monsters from "../images/sites/monsters.jpg"
-import Quote from "../images/sites/quote.jpg"
+import Crwn from "../images/sites/crwn.JPG"
+import SignUp from "../images/sites/sign-up-form.JPG"
+import Waukazoo from "../images/sites/wo.JPG"
+import Piano from "../images/sites/piano.JPG"
+import DrumKit from "../images/sites/drum-kit.JPG"
+import Monsters from "../images/sites/monsters.JPG"
+import Quote from "../images/sites/quote.JPG"
 
 import "../styles/portfolio.scss"
 
