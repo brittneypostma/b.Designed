@@ -11,30 +11,25 @@ module.exports = {
     description: "Portfolio for b.Designed, Brittney Postma",
   },
   plugins: [
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "src",
+        path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/images`,
+        name: "images",
+      },
+    },
     "gatsby-plugin-sass",
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`),
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
-        path: path.join(__dirname, `src`),
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: path.join(__dirname, `content`),
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-transformer-remark",
       options: {
