@@ -2,14 +2,14 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-import Family from "../images/family.png"
-import WebDev from "../images/webdev.png"
-import Graphic from "../images/graphic.png"
-import Marketing from "../images/marketing.png"
-import Fast from "../images/fast.png"
-import Responsive from "../images/responsive.png"
-import Intuitive from "../images/intuitive.png"
-import Dynamic from "../images/dynamic.png"
+import Family from "../../static/family.png"
+import WebDev from "../../static/webdev.png"
+import Graphic from "../../static/graphic.png"
+import Marketing from "../../static/marketing.png"
+import Fast from "../../static/fast.png"
+import Responsive from "../../static/responsive.png"
+import Intuitive from "../../static/intuitive.png"
+import Dynamic from "../../static/dynamic.png"
 
 import "../styles/about.scss"
 
@@ -57,7 +57,7 @@ const AboutPage = () => {
             <div>
               <img
                 src={Marketing}
-                alt="markerter"
+                alt="marketer"
                 className="skills marketing"
               />
               <p>

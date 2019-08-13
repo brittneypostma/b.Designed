@@ -1,9 +1,9 @@
 import React from "react"
 
-import Twitter from "../images/twitter.svg"
-import LinkedIn from "../images/in.png"
-import Github from "../images/github.svg"
-import Facebook from "../images/facebook.png"
+import Twitter from "../../static/twitter.svg"
+import LinkedIn from "../../static/in.png"
+import Github from "../../static/github.svg"
+import Facebook from "../../static/facebook.png"
 
 import "../styles/social.scss"
 
