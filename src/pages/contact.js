@@ -11,12 +11,12 @@ const ContactPage = () => (
       <form
         data-netlify="true"
         netlify-honeypot="bot-field"
-        data-netlify-recaptcha="true"
         action="/pages/success"
         name="contact"
         method="POST"
         className="card-form"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <div>
           <label>
             First Name:
