@@ -25,7 +25,7 @@ const AboutPage = () => {
           <h1>About Me</h1>
           <p>
             I am a mom of 3 wonderful children and I have still managed to find
-            the time to teach myself to code. I love developing web sites
+            the time to teach myself to code. I love developing web sites that are
             beautiful, fluid, and responsive. I thrive on mobile-first
             development with an extensive knowledge of CSS and React with
             Gatsby, SEO, UX/UI design, and logo design. I love learning about

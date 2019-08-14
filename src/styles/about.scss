@@ -98,3 +98,20 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .right-about {
+    grid-column: 1/-1;
+
+    .skill-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+    .skills {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}

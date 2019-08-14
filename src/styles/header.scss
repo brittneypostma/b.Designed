@@ -110,9 +110,9 @@
       width: 50px;
       transform: perspective(1px) translateZ(0);
       transform-style: preserve-3d;
-      transition: all 1s infinite linear;
+      transition: all 0.5s infinite linear;
       &:hover {
-        animation: hvr-pulse 1s linear;
+        animation: hvr-pulse 0.5s linear;
         transform: scale(1.25);
       }
     }
