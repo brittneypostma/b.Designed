@@ -17,7 +17,6 @@
 
   .home-btn {
     background-color: #0785fe;
-    border: 5px ridge #111;
     color: #ffffff;
     text-align: center;
     padding: 20px;
@@ -28,6 +27,9 @@
     -webkit-transition-timing-function: linear;
     -webkit-transition: width 2s; /* Safari */
     transition: all 1.5s ease;
+    outline: none;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
   .home-btn:hover {
@@ -37,11 +39,9 @@
   }
 
   .changing-text {
-    font-size: 28px;
     background-color: #0785fe;
     color: #ffffff;
     padding: 10px;
-    border: 5px ridge #111;
     font-weight: 200;
   }
 
@@ -86,6 +86,21 @@
         display: grid;
         grid-template-columns: 65vw;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .home {
+    font-size: 20px;
+
+    .left-home h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 100px;
     }
   }
 }

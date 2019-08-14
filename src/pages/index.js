@@ -48,7 +48,7 @@ class IndexPage extends React.Component {
             </h2>
             <div className="home-btns">
               <Link to="/contact">
-                <button className="contact-btn home-btn">Contact me now</button>
+                <button className="contact-btn home-btn">Contact me</button>
               </Link>
               <Link to="/portfolio">
                 <button className="portfolio-btn home-btn">See my work</button>
